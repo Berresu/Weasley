@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 450px 3fr 2fr 1fr;
+    grid-template-areas: 
+    "header"
+    "article"
+    "aside"
+    "footer"
+    ;
+}
+
+header{
+    grid-area: header;
+    background-color: #F26B33;
+    background-image: url(images/wbsLogo.fw.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+}
+
+header > h1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 75px;
+    font-family: Merriweather;
+    font-weight: bolder;
+    color: #482368;
+}
+
+header > ul{
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    list-style-type: none;
+    word-spacing: 20px;
+}
+
+header > ul >li{
+    padding: 10px;
+    font-family: Merriweather;
+    font-weight: bolder;
+}
+
+header > ul > li > a{
+    font-weight: bolder;
+    text-decoration: none;
+    color: #482368;
+}
+
+header > div{
+    display: flex;
+    justify-content: center;
+    
+}
+
+article{
+    grid-area: article;
+    background-color: #FFB171;
+    display: flex;
+}
+
+.yumruklayanTeleskop{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 33%;
+}
+
+.pigmePofidik{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 33%;
+}
+
+.askIksiri{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 33%;
+}
+
+.yumruklayanTeleskop > img{
+    height: 200px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+.pigmePofidik > img{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px;
+}
+
+.askIksiri > img{
+    height: 150px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+.yumruklayanTeleskop > h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    word-spacing: 5px;
+    padding: 15px;
+}
+
+.yumruklayanTeleskop > p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 15px;
+}
+
+.pigmePofidik > h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    word-spacing: 5px;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+.pigmePofidik > p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 15px;
+}
+
+.askIksiri > h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    word-spacing: 5px;
+    padding: 8px;
+    margin-top: 40px;
+}
+
+.askIksiri > p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 15px;
+}
+
+aside{
+    grid-area: aside;
+    background-color: #FD7840;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #713015;
+}
